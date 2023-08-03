@@ -1,17 +1,70 @@
-body {
+/* Reset some default styles */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 12px;
+}
+  
+.header {
     background-color: white;
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  main {
-    padding: 20px;
-  }
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.circle-cutout {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('./assets/profile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-width: 10px;
+    border-color: black;
+}
+
+.name {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Scroll behavior for menu links */
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Sections styles */
+section {
+    height: 100vh; /* Adjust this value as needed */
+    padding: 100px;
+}
