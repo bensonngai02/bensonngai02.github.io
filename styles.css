@@ -95,7 +95,7 @@ p {
 
 .content-section {
     padding: 10px 100px;
-    background-color: white;
+    background-color: transparent;
   }
 
 .experience-left {
@@ -108,6 +108,10 @@ p {
     align-items: flex-end;
     text-align: right;
     justify-content: center; /* Center items vertically */
+}
+
+.experience-half {
+    flex: 0 0 50%;
 }
 
 .experience-whole {
@@ -128,14 +132,13 @@ p {
 
 .experience {
     padding: 20px;
-    background-color: #ffffff;
     border-radius: 5px;
     border: 3px solid black; /* Add border to both frames */
     transition: transform 0.3s ease-in-out;
 }
 
 .experience:hover {
-    transform: scale(1);
+    transform: scale(1.01);
 }
 
 .experience-text {
@@ -151,7 +154,7 @@ p {
 
 /* Sections styles */
 section {
-    padding: 5px;
+    padding: 0px;
 }
 
 .section-wrapper {
@@ -166,7 +169,7 @@ section {
     padding-right: 5px;
     background-position: center;
     background-size: cover;
-    
+    cursor: pointer;
 }
 
 .icon:hover {
@@ -194,12 +197,13 @@ section {
     position: relative;
     width: 150px; /* Set the width of the iPhone container */
     height: 300px; /* Set the height of the iPhone container */
+    overflow: hidden;
   }
   
   .iphone-image {
     width: 100%;
     z-index: 1000;
-
+    object-fit: cover;
   }
   
   .video-wrapper {
@@ -209,6 +213,11 @@ section {
     left: 10%; /* Adjust the left position to align the video inside the cutout */
     width: 80%; /* Set the width of the video inside the cutout */
     height: 82%; /* Set the height of the video inside the cutout */
+    border-radius: 10000%;
+  }
+
+  .text-flip {
+    transform: scaleY(-1);
   }
   
 
