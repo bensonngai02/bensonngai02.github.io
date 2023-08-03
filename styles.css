@@ -135,7 +135,7 @@ p {
 }
 
 .experience:hover {
-    transform: scale(1.01);
+    transform: scale(1);
 }
 
 .experience-text {
@@ -189,4 +189,26 @@ section {
 .buzzword {
     font-weight: bold;
 }
+
+.iphone-container {
+    position: relative;
+    width: 150px; /* Set the width of the iPhone container */
+    height: 300px; /* Set the height of the iPhone container */
+  }
+  
+  .iphone-image {
+    width: 100%;
+    z-index: 1000;
+
+  }
+  
+  .video-wrapper {
+    z-index: -1;
+    position: absolute;
+    top: 3%; /* Adjust the top position to align the video inside the cutout */
+    left: 10%; /* Adjust the left position to align the video inside the cutout */
+    width: 80%; /* Set the width of the video inside the cutout */
+    height: 82%; /* Set the height of the video inside the cutout */
+  }
+  
 
