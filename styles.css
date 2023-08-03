@@ -129,8 +129,13 @@ p {
 .experience {
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 3px solid black; /* Add border to both frames */
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience:hover {
+    transform: scale(1.01);
 }
 
 .experience-text {
