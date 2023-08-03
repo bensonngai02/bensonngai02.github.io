@@ -1,8 +1,26 @@
 /* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     font-family: "Helvetica Neue", sans-serif;
+}
+
+a {
+    transition: font-size 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:hover {
+    color: #61afef;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #c678dd;
 }
 
 h1 {
@@ -18,7 +36,7 @@ h3 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 16px;
 }
   
 .header {
@@ -63,8 +81,102 @@ p {
     text-decoration: underline;
 }
 
+
+.rectangle-image {
+    max-width: 90%;
+    margin-bottom: 0px;
+    display: inline-block;
+    text-align: right;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Apply transition to the image */
+
+  }
+
+  
+
+  .rectangle-image:hover{
+    transform: translateX(-100px) scale(4); /* Enlarge to the left on hover */
+    cursor: pointer;
+  }
+
+.about-section {
+    padding: 50px 200px;
+    background-color: white;
+  }
+
+.content-section {
+    padding: 10px 100px;
+    background-color: white;
+  }
+
+.experience-left {
+    flex: 0 0 50%;
+    background-color: white;
+    padding-right: 50px;
+}
+
+.experience-right {
+    flex: 0 0 40%;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.profile-column {
+    padding-right: 50px;
+    text-align: right;
+  }
+
+/* organizes into columns*/
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.experience {
+    padding-top: 10px;
+}
+
+.icon-and-text{
+    flex: 1;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
 /* Sections styles */
 section {
-    height: 100vh; /* Adjust this value as needed */
-    padding: 100px;
+    padding: 5px;
 }
+
+.section-wrapper {
+    padding: 0px;
+}
+
+.icon {
+    display: inline-flex;
+    flex: 1;
+    width: 35px;
+    height: 35px;
+    padding-right: 5px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+
+.icon-wrapper {
+    flex: 1;
+    align-items: center;
+    vertical-align: middle;
+    padding: 20px 0px;
+}
+
+.buzzword {
+    font-weight: bold;
+}
+
