@@ -121,6 +121,10 @@ p {
     text-align: right;
 }
 
+.experience-whole {
+    flex: 1;
+}
+
 .profile-column {
     padding-right: 50px;
     text-align: right;
@@ -131,10 +135,15 @@ p {
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding-bottom: 20px;
 }
 
 .experience {
     padding-top: 10px;
+}
+
+.experience-text {
+    padding: 10px 20px;
 }
 
 .icon-and-text{
@@ -174,6 +183,10 @@ section {
     align-items: center;
     vertical-align: middle;
     padding: 20px 0px;
+}
+
+.emoji {
+    padding-right: 2px;
 }
 
 .buzzword {
