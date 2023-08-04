@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3, h4, p {
     margin: 0;
     padding: 5px;
     font-family: "Helvetica Neue", sans-serif;
@@ -15,7 +15,6 @@ a:link {
 }
 
 a:hover {
-    color: #61afef;
     text-decoration: underline;
 }
 
@@ -35,8 +34,18 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font-size: 16px;
+}
+
 p {
     font-size: 16px;
+}
+
+.job-title {
+    font-style: italic;
+    font-weight: normal;
+    color: gray;
 }
   
 .header {
@@ -86,6 +95,9 @@ p {
     max-width: 100%;
     display: inline-block;
     text-align: right;
+    border-radius: 5px;
+    border: 3px solid black; 
+    transition: transform 0.3s ease-in-out;
   }
 
 .about-section {
@@ -133,7 +145,7 @@ p {
 .experience {
     padding: 20px;
     border-radius: 5px;
-    border: 3px solid black; /* Add border to both frames */
+    border: 3px solid black; 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -176,6 +188,13 @@ section {
     opacity: 0.8;
 }
 
+.horizontal-line {
+    width: 100%;
+    border-top: 2px solid #333;
+    margin: 20px;
+    padding: 20px;
+}
+
 
 .icon-wrapper {
     flex: 1;
@@ -189,8 +208,28 @@ section {
     font-size: 18px;
 }
 
+.wave {
+    display: inline-block;
+    animation: waveAnimation 3s infinite ease-in-out;
+}
+
 .buzzword {
     font-weight: bold;
+}
+
+.linkable {
+    background-color: salmon;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.linkable:hover {
+    opacity: 80%;
+}
+
+.float-text{
+    display: inline-block;
+    animation: floatAnimation 2s infinite ease-in-out;
 }
 
 .iphone-container {
@@ -217,7 +256,36 @@ section {
   }
 
   .text-flip {
-    transform: scaleY(-1);
+    display: inline-block;
+    transform: scaleX(-1);
+    position: relative;
+    /* top:0.2em; */
   }
+
+  .fancy {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  @keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+}
+
   
 

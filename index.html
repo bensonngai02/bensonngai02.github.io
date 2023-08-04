@@ -14,13 +14,18 @@
                 <!--<a href="#recents">recents</a>-->
                 <a href="#experiences">experiences</a>
                 <a href="#projects">projects</a>
-                <a href="#resume">resume</a>
+                <a href="#notresume">my other life</a>
+
+                <!-- <div style="flex:1; display:flex; flex-direction: column;padding-top: 20px;">
+                    <a href="#resume">resume</a>
+                    
+                </div> -->
+                
               </nav>
             </header>
 
             <section id="about" class="section-wrapper">
                 <section class="about-section">
-
                     <section class="columns">
                         <div class="profile-column">
                             <div class="circle-cutout"></div>
@@ -28,15 +33,14 @@
 
                         <div>
                             <div class="icon-and-text">
-                                <h1><span class="emoji">&#128075</span></h1>
+                                <h1><span class="emoji wave" style="font-size: 28px;">&#128075</span></h1>
                                 <h1>about me</h1>
                             </div>
-                            <p>I'm a <span class="buzzword">junior</span> studying CS + Math @ <span class="buzzword">UT Austin</span>  under the <span class="buzzword">Turing Scholars CS Honors</span> program <span class="emoji">&#129304;</span>.
+                            <p>I'm a <span class="buzzword">junior</span> studying <span class="buzzword">CS</span> + <span class="buzzword">Math</span> @ <span class="buzzword">UT Austin</span>  under the <a href="https://www.cs.utexas.edu/turing-scholars"><span class="buzzword linkable">Turing Scholars CS Honors</span></a> program <span class="emoji">&#129304;</span>.
                                 I love working in the intersection of <span class="buzzword">software engineering</span>, <span class="buzzword">biology</span>, and <span class="buzzword">ML/AI</span>, but am constantly growing my knowledge in computer vision, systems, and entrepreneurship.</p>
 
                             <p>Outside of school, I love playing and competing in tennis <span class="emoji">&#127934;</span>, working out <span class="emoji">&#128170;</span>, cooking <span class="emoji">&#127859;</span>, watching movies (especially animation) <span class="emoji">&#127916;</span>, and travelling <span class="emoji">&#9992;&#65039;</span>.</p>
 
-                            <p>Feel free to reach out!</p>
                             <div class="icon-wrapper">
                                 
                                     <a class = "icon" href="https://www.linkedin.com/in/bensonngai02/">
@@ -57,18 +61,31 @@
             </section>
             <section id="experiences" class="section-wrapper">
                 <section class="content-section">
-                    <h1>I've worked at...</h1>
+                    <h1 style="text-align: left;">where i've been</h1>
+
                     <div style="padding: 5px;"></div>
 
                     <div class="experience">
                         <section class="columns">
                             <div class="experience-left">
-                                <div class="icon-and-text">
-                                    <a href="https:/www.omphaloslifesci.com"><img class="icon" src="./assets/omphalos.jpeg"/></a>
-                                    <a href="https:/www.omphaloslifesci.com"><h2>Omphalos Lifesciences</h2></a>
+                                <div>
+                                    <div class="icon-and-text">
+                                        <a href="https:/www.omphaloslifesci.com"><img class="icon" src="./assets/omphalos.jpeg"/></a>
+
+                                        <div>
+                                            <a href="https:/www.omphaloslifesci.com" style="padding-bottom: 0px;"><h2>Omphalos Lifesciences</h2></a>
+                                            <h4 class="job-title" style="padding-top: 0px;">Software Engineer</h4>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    
+
                                 </div>
+                               
+
                                 <div class="experience-text">
-                                    <p><span class="emoji">&#129516</span> Developed <a href="https:/www.lplusplus.org"><span class="buzzword">L++</span></a>, a high-level programming language for efficiently simulating large-scale biosystems.</p>
+                                    <p><span class="emoji">&#129516</span> Developed <a href="https:/www.lplusplus.org"><span class="buzzword linkable">L++</span></a>, a high-level programming language for efficiently simulating large-scale biosystems.</p>
                                     <p><span class="emoji">&#9881;&#65039;</span> Designed and implemented a multi-pass interpreter and transcompiler in <span class="buzzword">C++</span> and <span class="buzzword">C</span>, composed of tokenization,
                                         parsing, syntax tree construction, symbol table generation, and error handling.</p>
                                     <p><span class="emoji">&#129514;</span> Developed an optimized, filtered <span class="buzzword">SQL</span> chemical database in <span class="buzzword">C++</span> and <span class="buzzword">Python</span>, facilitating 300K+ chemical
@@ -86,8 +103,10 @@
                                     width="300"
                                     src="https://youtube.com/embed/tcgGfThq-yY"
                                     frameborder="0"
-                                    allowfullscreen></iframe>
-                                </div>
+                                    allowfullscreen
+                                    ></iframe>
+                                </div>    
+                                <div style="padding: 10px;"></div>
                                 <img class="rectangle-image" style="width: 300px;" src="./assets/OmVisim - Human.webp"></img>
                             </div>
                             
@@ -104,13 +123,22 @@
                             <div class="experience-left">
                                 <div class="icon-and-text">
                                     <a href="https://www.moleculego.com"><img class="icon" src="./assets/moleculego.jpeg"/></a>
-                                    <a href="https://www.moleculego.com"><h2>MoleculeGo</h2></a>
+                                    <div>
+                                        <a href="https://www.moleculego.com"><h2>MoleculeGo</h2></a>
+                                        <h4 class="job-title" style="padding-top: 0px;">Software Engineer & Game Mechanics Lead</h4>
+                                    </div>
+                                    
                                 </div>
                                 <div class="experience-text">
-                                    <p><span class="emoji">&#128241;</span> Developed a geolocation educational biology app using <span class="buzzword">Expo</span>, funded by the <span class="buzzword">National Science Foundation</span>.</p>
-                                    <p><span class="emoji">&#127918;</span> Built the front-end interactive gameplay using <span class="buzzword">TypeScript</span>, <span class="buzzword">React Native</span> and <span class="buzzword">Google Maps API</span>.</p>
-                                    <p><span class="emoji">&#127979;</span> Oversaw team of 8 undergraduates and professors to design an educative experience for scientists.</p>
-                                    <p><span class="emoji">&#127758;</span> Successfully launched the app in July 2021, attracting 250+ unique users across 14+ countries.</p>
+                                    <p><span class="emoji">&#128241;</span> Developed a geolocation educational biology app 
+                                        using <a href="https://expo.dev"><span class="buzzword linkable">Expo</span></a>, funded by the <span class="buzzword">National Science Foundation</span>.</p>
+                                    <p><span class="emoji">&#127918;</span> Built the front-end interactive gameplay using 
+                                        <span class="buzzword">TypeScript</span>, <span class="buzzword">React Native</span> 
+                                        and <span class="buzzword">Google Maps API</span>.</p>
+                                    <p><span class="emoji">&#127979;</span> Oversaw team of 8 undergraduates and professors 
+                                        to design an educative experience for scientists.</p>
+                                    <p><span class="emoji">&#127758;</span> Successfully launched the app in July 2021, 
+                                        attracting 250+ unique users across 14+ countries. Available on <a href="https://apps.apple.com/us/app/moleculego/id1534623681"><span class="buzzword linkable"/>iOS</span></a> and <a href="https://play.google.com/store/apps/details?id=com.dolcevice.moleculeGo&hl=en_US&gl=US&pli=1"><span class="buzzword linkable"/>Android</span></a>.</p>
                                 </div>
                                 
                             </div>
@@ -140,7 +168,11 @@
                             <div class="experience-half">
                                 <div class="icon-and-text">
                                     <a href="https://invstr.com"><img class="icon" src="./assets/invstr.webp"/></a>
-                                    <a href="https://invstr.com"><h2>Invstr</h2></a>
+                                    <div>
+                                        <a href="https://invstr.com"><h2>Invstr</h2></a>
+                                        <h4 class="job-title" style="padding-top: 0px;">UI/UX Developer</h4>
+                                    </div>
+                                    
                                 </div>
                                 <div class="experience-text">
                                     <p><span class="emoji">&#127912;</span> Designed user-friendly UIs for a London-based investment and stock-trading simulator application.</p>
@@ -156,12 +188,16 @@
                             <div class="experience-half">
                                 <div class="icon-and-text">
                                     <img class="icon" src="./assets/utd.png"/>
-                                    <h2>Student Researcher</h2>
+                                    <div>
+                                        <h2>UT Dallas</h2>
+                                        <h4 class="job-title" style="padding-top: 0px;">Student Researcher</h4>
+                                    </div>
+                                    
                                 </div>
                                 
                                 <div class="experience-text">
                                     <p><span class="emoji">&#128138;</span> Developed a generative transfer learning model with <span class="buzzword">Python</span> and <span class="buzzword">TensorFlow</span> to discover pharmaceuticals targeted at Cystic Fibrosis. </p>
-                                    <p><span class="emoji">&#128269;</span> Presented GAN research to weekly graduate machine learning discussion group.</p>
+                                    <p><span class="emoji">&#128269;</span> Presented <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network"><span class="buzzword linkable">GAN</span></a> research to weekly graduate machine learning discussion group.</p>
                                 </div>
                             </div>
                         </div>
@@ -173,35 +209,107 @@
             </section>
             <section id="projects" class="section-wrapper">
                 <section class="content-section">
-                    <h1>I've worked on...</h1>
+                    <h1>cool stuff i've worked on</h1>
                     <div style="padding: 5px;"></div>
                     <div class="experience">
                         <section class="columns">
                             <div class="experience-left">
                                 <div class="icon-and-text">
-                                    
                                     <a href="https://github.com/mna1024/HackMIT_2022_SilverAI"><h2><span class="emoji" style="font-size: 30px;">&#128483;&#65039;</span> SilverAI</h2></a>
                                 </div>
-                                <div class="experience-text">
+                             
+                                <div class="experience-text"">
+                                    <p><span class="emoji">&#127942;</span><span class="buzzword">HackMIT 2022 Social Impact Prize Winner ($2k)</span></p>
                                     <p><span class="emoji">&#128241;</span>Developed a digital speech pathologist <span class="buzzword">React.js</span> + <span class="buzzword">Flask</span> web app in <span class="buzzword">Python</span> and <span class="buzzword">JavaScript</span>, featuring...</p>
                                     <p><span class="emoji">&#128266;</span>User-tailored <span class="buzzword">speech exercises</span>.</p>
                                     <p><span class="emoji">&#128068;</span>Visual lip-tracker using <span class="buzzword">facemesh detection</span> to analyze movement correctness.</p>
-                                    <p><span class="emoji">&#128266;</span>Audio analyzer using a <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network"><span class="buzzword">CNN</span></a>  to analyze pronunciation correctness.</p>
-                                    <p><span class="emoji">&#129532;</span>Super clean UI created by yours truly.</p>
-                                
+                                    <p><span class="emoji">&#128266;</span>Audio analyzer using a <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network"><span class="buzzword linkable">CNN</span></a>  to analyze pronunciation correctness.</p>
+                                    <p><span class="emoji">&#129532;</span>Super <span class="buzzword">clean UI</span> created by yours truly.</p>
+                                    <div style="padding-bottom: 10px;"></div>
+                                    <section class="columns" style="display: flex; align-items: flex-end; flex: 1">
+                                        <img class="rectangle-image" style="width: 40%; height: 40%" src="./assets/silverAI - lip tracker.png"></img>
+                                        <div style="padding: 10px;"></div>
+                                        <img class="rectangle-image" style="width: 50%; height: 50%" src="./assets/silverAI - UI.png"></img>
+                                    </section>
                                 </div>
-                                
                             </div>
-
-                            <div class="experience-right" style="display:flex; flex-direction:column; align-items: center;"">
-                                <img class="rectangle-image" style="width: 300px;" src="./assets/silverAI - lip tracker.png"></img>
-                                <img class="rectangle-image" style="width: 300px;" src="./assets/silverAI - UI.png"></img>
+                            <div style="display:flex; flex-direction:row; align-items: center; padding-right: 25px;"">
+                                <img class="rectangle-image" src="./assets/silverAI - team.JPG"></img>
                             </div>
                         </section>
                     </div>
+
+                    <div style="padding: 10px;"></div>
+
+                    <div class="experience">
+                        <section class="columns">
+                            <div class="experience-left">
+                                <div class="icon-and-text">
+                                    <a href="https://github.com/bensonngai02/ponzi"><h2><span class="emoji" style="font-size: 30px;">&#9968;&#65039;</span> PONZI</h2></a>
+                                </div>
+                             
+                                <div class="experience-text"">
+                                    <p><span class="emoji">&#128224;</span>Developed an <a href="https://en.wikipedia.org/wiki/SECD_machine#Landin's_contribution"> <span class="buzzword linkable">SECD Machine (aka. Landin's Machine)</span></a> emulator using <span class="buzzword">C</span> and <span class="buzzword">C++</span> for <span class="buzzword">Scheme</span>, a Lisp-based functional programming language.</p>
+                                    <p><span class="emoji">&#128209;</span>Supported entire instruction set to compute <span class="buzzword">lambda calculus</span> expressions.</p>
+                                    <p><span class="emoji">&#127908;</span>Presented to computer architecture class.</p>
+                            
+                                </div>
+                            </div>
+                            <div style="display:flex; flex-direction:row; align-items: center; padding-right: 25px;"">
+                                <div class="rectangle-image">
+                                    <iframe
+                                    width="300"
+                                    src="https://www.youtube.com/embed/IHhq0pkws5Q"
+                                    src="https://youtube.com/embed/tcgGfThq-yY"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
                 </section>
             </section>
-            <section id="resume" class="section-wrapper">
+            <section id="notresume" class="section-wrapper">
+                <section id="projects" class="section-wrapper">
+                    <section class="content-section">
+                    <h1>my other life</h1>
+                    <div  style="border:0;">
+                        <section class="columns">
+                            <div class="experience-left">
+                                <div>
+                                    <p><span class="emoji">&#127925;</span> <span class="linkable" style="background-color:lightblue; font-weight: bold;"> FAVORITE SONG</span> SLIDE by CALVIN HARRIS ft. FRANK OCEAN & MIGOS</p>
+                                    <p><span class="emoji">&#127911;</span> <span class="linkable" style="background-color:lavender; font-weight: bold;"> FAVORITE ARTISTS</span> DAVE, WIZKID, TRAVIS SCOTT, DANIEL CAESAR</p>
+                                    <p><span class="emoji">&#127934;</span> <span class="linkable" style="background-color:lightgreen; font-weight: bold;"> RACKET</span> YONEX VCORE 98</p>
+                                    <p><span class="emoji">&#128045;</span> <span class="linkable" style="background-color:lightyellow; font-weight: bold;"> FAVORITE ANIMATION</span> RATATOUILLE</p>
+                                    <div>
+                                        <p><span class="emoji">&#10071;</span><span class="linkable" style="background-color:lightcoral; font-weight: bold;"> FUN FACTS</span></p>
+                                        <p style="padding-left: 25px;"><span class="emoji">&#49;&#65039;&#8419;</span>Born in New Zealand <span class="emoji">&#127475;&#127487;</span></p>
+                                        <p style="padding-left: 25px;"><span class="emoji">&#50;&#65039;&#8419;</span>Met Jack Harlow and Andrey Rublev on the same day</p>
+                                        <p style="padding-left: 25px;"><span class="emoji">&#51;&#65039;&#8419;</span>Sang the wrong lyrics to "Safe and Sound" by Capital Cities on a Tiktok which ended up going viral</p>
+
+                                        
+
+                                    </div>
+
+
+    
+                                </div>
+                            </div>
+    
+                            <div class="experience-right" style="display:flex; flex-direction:column; align-items: center;">
+                                
+                            </div>
+                            
+                        </section>
+                    </div>
+
+            
+    
+    
+                    </section>
+                </section>
               <!-- Accomplishments content goes here -->
             </section>
           </body>
