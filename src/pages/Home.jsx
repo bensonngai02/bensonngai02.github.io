@@ -2,6 +2,7 @@
 import React from 'react';
 import About from '../sections/About';
 import Experiences from '../sections/Experiences';
+import Programs from '../sections/Programs';
 import Projects from '../sections/Projects';
 import Life from '../sections/Life';
 import Blog from '../sections/Blog';
@@ -11,6 +12,7 @@ function Home() {
     <main>
       <About />
       <Experiences />
+      <Programs />
       <Projects />
       <Blog />
       <Life />

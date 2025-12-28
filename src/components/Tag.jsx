@@ -30,13 +30,16 @@ function Tag({ label }) {
   );
 }
 
-export function TagList({ tags }) {
-  if (!tags || tags.length === 0) return null;
+export function TagList({ tags, after }) {
+  const hasTags = Array.isArray(tags) && tags.length > 0;
+  if (!hasTags && !after) return null;
   return (
     <div className="tech-tags inline">
-      {tags.map((tag) => (
-        <Tag key={tag} label={tag} />
-      ))}
+      {hasTags &&
+        tags.map((tag) => (
+          <Tag key={tag} label={tag} />
+        ))}
+      {after}
     </div>
   );
 }

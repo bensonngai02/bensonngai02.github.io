@@ -8,10 +8,10 @@ export const recents = [
 
 
 export const favorites = [
-  { label: 'song', value: 'Slide - Calvin Harris ft. Frank Ocean & Migos', color: 'blue', emoji: '🎵' },
+  { label: 'song', value: 'Slide - Calvin Harris ft. Frank Ocean & Migos', color: 'blue', emoji: '🔊' },
   { label: 'artists', value: 'Dave, Wizkid, Travis Scott, Don Toliver', color: 'lavender', emoji: '🎧' },
-  { label: 'racket setup', value: 'Yonex VCORE 98 + Yonex POLYTOUR DRIVE ', color: 'green', emoji: '🎾' },
-  { label: 'animation', value: 'Ratatouille', color: 'yellow', emoji: '🐭' },
+  { label: 'racket', value: 'Yonex VCORE 98 + Yonex POLYTOUR DRIVE ', color: 'green', emoji: '🎾' },
+  { label: 'animation', value: 'Ratatouille', color: 'yellow', emoji: '🍿' },
 ];
 
 export const facts = [

@@ -9,7 +9,7 @@ export const experiences = [
     logo: '/assets/experiences/netflix.png',
     summary: '',
     expanded: [{ emoji: '🎨', text: 'Personalization Data' }],
-    tags: ['Scala', 'Spark', 'Flink', 'Python', 'Java', 'Kafka'],
+    tags: ['Scala', 'Python', 'Spark', 'Flink', 'Kafka'],
   },
   {
     company: 'UT Computer Science Graphics & AI Lab',
@@ -97,7 +97,9 @@ export const experiences = [
         ],
       },
     ],
-    media: ['/assets/experiences/iphone-cutout.png', '/assets/experiences/moleculogo-demo.mp4'],
+    media: [
+      { src: '/assets/experiences/moleculego-demo.mp4', size: 'small', orientation: 'portrait' },
+    ],
     tags: ['TypeScript', 'React Native', 'Google Maps API'],
   },
   {

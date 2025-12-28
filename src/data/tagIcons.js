@@ -3,7 +3,7 @@
 export const tagIcons = {
   python: '/assets/tags/python.png',
   spark: '/assets/tags/spark.png',
-  soda: '/assets/tags/soda.svg',
+  soda: '/assets/tags/soda.png',
   reactnative: '/assets/tags/react.png', // reuse react icon
   react: '/assets/tags/react.png',
   typescript: '/assets/tags/typescript.png',
@@ -26,6 +26,7 @@ export const tagIcons = {
   googlemapsapi: '/assets/tags/google-maps.png',
   vision: '/assets/tags/vision.png',
   travel: '/assets/tags/travel.png',
+  github: '/assets/about/github-white.png',
 };
 
 // Emoji fallbacks for tags without assets.
@@ -41,4 +42,5 @@ export const tagEmoji = {
   ai: '🤖',
   data: '📊',
   sql: '🗄️',
+  drugdiscovery: '🧬'
 };
