@@ -11,17 +11,20 @@ export const aboutContent = {
   heading: 'about me',
   paragraphs: [
     {
-      text: "I love working at the intersection of software engineering and ML/AI. \
-            I enjoy solving complex problems involved in distributed systems, databases, backend engineering, ML, and computer vision.",
+      text: "I love working at the intersection of software engineering and ML. \
+            I enjoy learning about and solving complex problems in distributed systems, databases, backend engineering, computer vision, and recommenders.",
       links: [
         { label: 'Turing Scholars CS Honors', href: 'https://www.cs.utexas.edu/turing-scholars' },
         { label: 'Texas Club Tennis', href: 'https://texasclubtennis.com'}
       ],
     },
     {
-      text: "I studied [CS] + [Math] @ [UT Austin] under the [Turing Scholars CS Honors] program 🤘🏼, and was actively part of [Texas Club Tennis].",
+      text: "🎓 I studied [CS] + [Math] @ [UT Austin] in the [Turing Scholars Honors] program 🤘🏼, and was actively part of [Texas Club Tennis].",
       links: [
-        { label: 'Turing Scholars CS Honors', href: 'https://www.cs.utexas.edu/turing-scholars' },
+        { label: 'CS', href: 'https://www.cs.utexas.edu'},
+        { label: 'Math', href: 'https://math.utexas.edu'},
+        { label: 'UT Austin', href: 'https://www.utexas.edu'},
+        { label: 'Turing Scholars Honors', href: 'https://www.cs.utexas.edu/turing-scholars' },
         { label: 'Texas Club Tennis', href: 'https://texasclubtennis.com'}
       ],
     },

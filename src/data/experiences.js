@@ -24,7 +24,7 @@ export const experiences = [
       { emoji: '🧠', text: 'Intelligently reassembling broken 3D objects. Advised by Dr. Qixing Huang & Jiaxin Lu.' },
       {
         emoji: '🎓',
-        text: 'Thesis defense: [Paper] [Presentation]',
+        text: 'Thesis: [Paper] [Presentation]',
         links: [
           { label: 'Presentation', href: '/assets/experiences/CS379H Thesis Presentation - Benson Ngai.pdf', buzzword: true },
           { label: 'Paper', href: '/assets/experiences/CS379H Turing Scholar Thesis - Benson Ngai.pdf', buzzword: true },
@@ -42,14 +42,14 @@ export const experiences = [
     logo: '/assets/experiences/bloomberg.jpg',
     summary: '',
     expanded: [
-      { emoji: '💻', text: 'ESG Research Data' },
+      { emoji: '🌿', text: 'ESG Research Data' },
     ],
     tags: ['Python', 'SODA', 'Spark'],
   },
   {
     company: 'Omphalos Lifesciences',
     role: 'Software Engineering Intern',
-    period: '2024',
+    period: '2023',
     location: 'Dallas, TX',
     link: 'https://www.omphaloslifesci.com',
     archived: false,

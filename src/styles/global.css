@@ -766,8 +766,8 @@ footer {
   --buzz-bg: #ffe3b3;
   --buzz-color: #5c3a0c;
   --buzz-border: none;
-  --buzz-radius: 8px;
-  --buzz-pad: 5px 9px;
+  --buzz-radius: 4px;
+  --buzz-pad: 2px 4px;
   --buzz-shadow: none;
   --buzz-decor: none;
   --buzz-weight: 700;
