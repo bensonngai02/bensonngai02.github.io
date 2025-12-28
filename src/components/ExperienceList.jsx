@@ -44,6 +44,14 @@ function ExperienceDetails({ item, isOpen, contentHeight, setRef, titleText }) {
   );
 }
 
+function parseYear(value = '') {
+  // Extracts the first 4-digit year or handles 'now'/'present' as max.
+  const lower = String(value).toLowerCase();
+  if (lower.includes('now') || lower.includes('present') || lower.includes('currently')) return 9999;
+  const match = String(value).match(/\d{4}/);
+  return match ? parseInt(match[0], 10) : 0;
+}
+
 export default function ExperienceList({
   items = [],
   id = 'experiences',
@@ -52,7 +60,9 @@ export default function ExperienceList({
 }) {
   const [expanded, setExpanded] = useState(null);
   const detailRefs = useRef({});
-  const filtered = (items || []).filter((i) => !i.archived);
+  const filtered = (items || [])
+    .filter((i) => !i.archived)
+    .sort((a, b) => parseYear(b.dates || b.period) - parseYear(a.dates || a.period));
 
   const toggle = (key) => {
     setExpanded((prev) => (prev === key ? null : key));
@@ -111,7 +121,7 @@ export default function ExperienceList({
                     <div className="experience-meta">{item.location || ''}</div>
                   </div>
                 </div>
-                <div className="experience-period">{item.period}</div>
+                <div className="experience-period">{item.dates}</div>
                 <ExperienceDetails
                   item={item}
                   isOpen={isOpen}

@@ -5,7 +5,7 @@ export const projects = [
     archived: false,
     link: 'https://devpost.com/software/rendr-dev',
     logo: '/assets/projects/rendr.png',
-    period: '2023',
+    dates: '2023',
     role: 'No-code AI development tool for fast, fluid front-end development.',
     github: 'https://github.com/rendr-dev/rendr/tree/main',
     location: 'HackMIT',
@@ -22,7 +22,7 @@ export const projects = [
     archived: false,
     github: 'https://github.com/mna1024/HackMIT_2022_SilverAI',
     icon: '🗣',
-    period: '2022',
+    dates: '2022',
     role: 'Digital speech pathologist',
     location: 'HackMIT',
     summary: '',
@@ -46,9 +46,9 @@ export const projects = [
     archived: false,
     link: 'https://github.com/bensonngai02/ponzi',
     icon: '⛏️',
-    period: '2021',
+    dates: '2021',
     role: "SECD (Landin's Machine) emulator for Scheme's lambda calculus instruction set",
-    location: 'Computer Architecture Final Project',
+    location: 'Honors Computer Architecture',
     github: 'https://github.com/bensonngai02/ponzi',
     summary: '',
     expanded: [
@@ -61,4 +61,32 @@ export const projects = [
     tags: ['C', 'C++'],
     media: [{src: 'https://www.youtube.com/embed/IHhq0pkws5Q', size: 'medium'}],
   },
+  {
+    company: 'NEAT-PSO',
+    archived: false,
+    link: '',
+    icon: '🧬',
+    dates: '2024',
+    role: 'Hybrid evolutionary algorithm for evolving CNN architectures',
+    location: 'Graduate Neural Networks',
+    github: 'https://github.com/briankim31415/NEAT-PSO',
+    summary: '',
+    expanded: [
+      { 
+          text: '🔍 Explored hybrid approach of [NeuroEvolution of Augmenting Topologies (NEAT)] with [Particle Swarm Optimization (PSO)] to search novel efficient & performant CNN architectures for image classification. ',
+          links: [
+            {
+              label: 'NeuroEvolution of Augmenting Topologies (NEAT)', href: 'https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies', buzzword: true
+            },
+            {
+              label: 'Particle Swarm Optimization (PSO)', href: 'https://en.wikipedia.org/wiki/Particle_swarm_optimization', buzzword: true
+            }
+          ]
+      },
+      { text: '📄 [Paper]', links: [{label: 'Paper', href: '/assets/projects/neat-pso.pdf', buzzword: true}]},
+    ],
+    tags: ['Python', 'PyTorch'],
+    media: [],
+  },
+  
 ];

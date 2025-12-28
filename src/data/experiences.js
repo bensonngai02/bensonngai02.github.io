@@ -3,7 +3,7 @@ export const experiences = [
   {
     company: 'Netflix',
     role: 'Software Engineer',
-    period: 'now',
+    dates: 'now',
     location: 'Los Gatos, CA',
     archived: false,
     logo: '/assets/experiences/netflix.png',
@@ -14,7 +14,7 @@ export const experiences = [
   {
     company: 'UT Computer Science Graphics & AI Lab',
     role: 'Undergraduate Researcher',
-    period: '2024 - 2025',
+    dates: '2024 - 2025',
     location: 'Austin, TX',
     archived: false,
     link: 'https://www.cs.utexas.edu',
@@ -36,7 +36,7 @@ export const experiences = [
   {
     company: 'Bloomberg',
     role: 'Software Engineering Intern',
-    period: '2024',
+    dates: '2024',
     location: 'New York, NY',
     archived: false,
     logo: '/assets/experiences/bloomberg.jpg',
@@ -49,7 +49,7 @@ export const experiences = [
   {
     company: 'Omphalos Lifesciences',
     role: 'Software Engineering Intern',
-    period: '2023',
+    dates: '2023',
     location: 'Dallas, TX',
     link: 'https://www.omphaloslifesci.com',
     archived: false,
@@ -76,7 +76,7 @@ export const experiences = [
   {
     company: 'MoleculeGo',
     role: 'Software Engineer & Game Mechanics Lead',
-    period: '2021 - 2022',
+    dates: '2021 - 2022',
     location: 'Dallas, TX',
     link: 'https://www.moleculego.com',
     archived: false,
@@ -105,7 +105,7 @@ export const experiences = [
   {
     company: 'UT Dallas',
     role: 'Student Researcher',
-    period: '2020 — 2021',
+    dates: '2020 — 2021',
     location: 'Richardson, TX',
     archived: true,
     logo: '/assets/experiences/utd.png',
