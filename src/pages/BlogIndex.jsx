@@ -11,8 +11,9 @@ function BlogIndex() {
   return (
     <main className="section section-wrapper blog-font-scope" style={{ marginTop: '24px' }}>
       <section className="content-section">
-        <div className="blog-header-top">
+        <div className="blog-header-top" style={{ justifyContent: 'space-between' }}>
           <Link to="/#about">← Back</Link>
+          <BlogFontToggle />
         </div>
         <div className="section-header">
           <div>
@@ -21,14 +22,13 @@ function BlogIndex() {
           </div>
         </div>
 
-        {posts.length === 0 && <p>No posts yet. Add a markdown file in src/posts.</p>}
+        {posts.length === 0 && <p>No posts yet. Add a markdown file in public/blog.</p>}
 
         <div className="blog-list" style={{ marginTop: '8px' }}>
-          {posts.map((post, idx) => (
+          {posts.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className="post-row">
               <div className="post-row-main" style={{ width: '100%', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div className="post-title">
-                  <span style={{ marginRight: '6px', color: '#666', fontWeight: 600 }}>{idx + 1}.</span>
                   {post.title}
                 </div>
                 <div className="post-date">{post.formattedDate}</div>
@@ -39,9 +39,7 @@ function BlogIndex() {
             </Link>
           ))}
         </div>
-        <div className="blog-font-footer">
-          <BlogFontToggle />
-        </div>
+        <div className="blog-font-footer" />
       </section>
     </main>
   );

@@ -25,17 +25,18 @@ export const tagIcons = {
   unreal: '/assets/tags/unrealengine.png',
   googlemapsapi: '/assets/tags/google-maps.png',
   vision: '/assets/tags/vision.png',
-  travel: '/assets/tags/travel.png',
   github: '/assets/about/github-white.png',
 };
 
 // Emoji fallbacks for tags without assets.
 export const tagEmoji = {
   cooking: '🍳',
-  food: '🍽️',
+  food: '🍔',
   restaurant: '🍽️',
   restaurants: '🍽️',
   travel: '✈️',
+  random: '🎰',
+  nature: '🏔',
   tech: '💻',
   update: '📝',
   ml: '🤖',

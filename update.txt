@@ -1,8 +1,0 @@
-Look at this entire repository. I have a few problems with it:
-    1. The code style is wayyy too old, it uses straight HTML and CSS which is honestly fine, but updating my website with 
-    new things such as new blog posts, new experiences, is just a hassle. It's not very modular. You can decide whether to keep
-    using straight HTML/CSS or something better, but I just want a more modern code stack that is easy to easily update.
-    2. This setup does NOT work with Phone screens; it just displays as a regular webpage. 
-    3. I need a way to easily upload new blog / writing posts. Provide me a way of easily updating blog posts.
-    4. I no longer want the experiences / projects to be in these chunky blocks. Look at this website for inspiration for experiences/websites: https://www.rashadphz.com
-    5. The actual flow of my website (bio, experiences, project, life) is fine. Keep that.

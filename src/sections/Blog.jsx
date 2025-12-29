@@ -21,7 +21,6 @@ function Blog() {
             <Link key={post.slug} to={`/blog/${post.slug}`} className="post-row">
               <div className="post-row-main" style={{ width: '100%', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div className="post-title">
-                  <span style={{ marginRight: '6px', color: '#666', fontWeight: 600 }}>{idx + 1}.</span>
                   {post.title}
                 </div>
                 <div className="post-date">{post.formattedDate}</div>

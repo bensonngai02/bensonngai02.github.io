@@ -7,7 +7,7 @@ React + Vite build of bensonngai02.github.io with modular content and markdown-p
 - Production build: `npm run build` (outputs to `dist/`), preview with `npm run preview`.
 
 ### Add a blog / writing post
-1. Copy `src/posts/welcome-to-the-new-site.md` into `src/posts/your-slug.md`.
+1. Copy `public/blog/welcome-to-the-new-site.md` into `public/blog/your-slug.md`.
 2. Update the front matter:
    ```yaml
    ---
@@ -15,6 +15,7 @@ React + Vite build of bensonngai02.github.io with modular content and markdown-p
    date: "2025-01-01"
    description: "One-liner for the index cards."
    tags: ["tag1", "tag2"]
+   archived: false
    ---
    ```
 3. Write in Markdown below the front matter. Save and refresh; the post shows up at `/blog/your-slug`.

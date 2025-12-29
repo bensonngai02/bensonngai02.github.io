@@ -728,6 +728,10 @@ footer {
 .markdown-body {
   line-height: 1.6;
   padding: 10px;
+  max-width: 760px;
+  margin: 0 auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .post-body {

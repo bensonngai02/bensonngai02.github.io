@@ -7,7 +7,8 @@ if (typeof globalThis !== 'undefined' && !globalThis.Buffer) {
   globalThis.Buffer = Buffer;
 }
 
-const files = import.meta.glob('../posts/*.md', {
+// Blog markdown files live in the project-root /blog folder (not public/).
+const files = import.meta.glob('../../blog/*.md', {
   eager: true,
   query: '?raw',
   import: 'default',
@@ -16,11 +17,12 @@ const files = import.meta.glob('../posts/*.md', {
 const WORDS_PER_MINUTE = 200;
 
 function normalizeDate(dateInput) {
-  const parsed = new Date(dateInput);
-  if (Number.isNaN(parsed.getTime())) {
-    return new Date();
+  if (typeof dateInput === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(dateInput)) {
+    const parsed = new Date(`${dateInput}T00:00:00`);
+    if (!Number.isNaN(parsed.getTime())) return parsed;
   }
-  return parsed;
+  const fallback = new Date(dateInput);
+  return Number.isNaN(fallback.getTime()) ? new Date() : fallback;
 }
 
 function formatDate(dateInput) {
@@ -39,7 +41,7 @@ function estimateReadTime(text) {
 const posts = Object.entries(files)
   .map(([path, raw]) => {
     const { data, content } = matter(raw);
-    const slug = path.replace('../posts/', '').replace('.md', '');
+    const slug = path.replace('../../blog/', '').replace('.md', '');
     const date = normalizeDate(data.date || new Date());
 
     return {
@@ -51,12 +53,13 @@ const posts = Object.entries(files)
       tags: data.tags || [],
       content,
       readTime: estimateReadTime(content),
+      archived: Boolean(data.archived),
     };
   })
   .sort((a, b) => b.date - a.date);
 
 export function getAllPosts() {
-  return posts;
+  return posts.filter((p) => !p.archived);
 }
 
 export function getLatestPosts(count = 2) {
