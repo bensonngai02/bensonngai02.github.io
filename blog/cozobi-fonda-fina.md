@@ -1,6 +1,6 @@
 ---
 title: "Cozobi Fonda Fina"
-date: "2025-12-29"
-tags: ["restaurant", "travel"]
+date: "2025-12-30"
+tags: ["restaurant", "travel", "in progress"]
 archived: false
 ---

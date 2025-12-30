@@ -1,11 +1,12 @@
 // Top-level app layout and routing; edit routes or global wrappers here.
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import BlogIndex from './pages/BlogIndex';
-import BlogPostPage from './pages/BlogPostPage';
+
+const BlogIndex = lazy(() => import('./pages/BlogIndex'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -47,8 +48,22 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<BlogIndex />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route
+          path="/blog"
+          element={
+            <Suspense fallback={<div style={{ padding: '20px' }}>Loading…</div>}>
+              <BlogIndex />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/blog/:slug"
+          element={
+            <Suspense fallback={<div style={{ padding: '20px' }}>Loading…</div>}>
+              <BlogPostPage />
+            </Suspense>
+          }
+        />
       </Routes>
       <Footer />
     </div>

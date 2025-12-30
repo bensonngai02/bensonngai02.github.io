@@ -43,5 +43,6 @@ export const tagEmoji = {
   ai: '🤖',
   data: '📊',
   sql: '🗄️',
-  drugdiscovery: '🧬'
+  drugdiscovery: '🧬',
+  inprogress: '⚠️'
 };

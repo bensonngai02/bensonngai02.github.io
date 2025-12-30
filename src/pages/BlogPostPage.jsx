@@ -81,7 +81,7 @@ function ImageRenderer({ src, alt, title }) {
         alt={alt}
         style={{ 
           width: '100%',
-          borderRadius: '10px',
+          borderRadius: '4px',
           display: 'block',
           height: 'auto'
         }}
