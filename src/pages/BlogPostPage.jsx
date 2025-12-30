@@ -18,7 +18,7 @@ const SIZE_MAP = {
 };
 
 function parseImageMeta(title = '') {
-  const meta = { size: 'm', align: '' };
+  const meta = { size: 'm', align: '', caption: '' };
   if (!title) return meta;
   
   // Parse all key=value pairs, handling quoted and unquoted values
@@ -42,6 +42,7 @@ function parseImageMeta(title = '') {
   pairs.forEach(({ key, value }) => {
     if (key === 'size') meta.size = value;
     if (key === 'align') meta.align = value;
+    if (key === 'caption') meta.caption = value.replace(/_/g, ' ');
   });
   
   return meta;
@@ -53,21 +54,23 @@ function ImageRenderer({ src, alt, title }) {
 
   // Container style for the wrapper
   let containerStyle = {
-    display: 'inline-block',
-    verticalAlign: 'top',
-    margin: '0 4px 8px 0',
+    display: 'inline-flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    verticalAlign: 'middle',
+    margin: '0 6px 10px 0',
     maxWidth: width,
+    textAlign: 'center',
   };
 
   // Apply alignment to container
   if (meta.align === 'center') {
-    containerStyle.margin = '0 auto 8px auto';
-    containerStyle.display = 'block';
+    containerStyle.margin = '0 auto 10px auto';
   } else if (meta.align === 'left') {
-    containerStyle.marginRight = '4px';
+    containerStyle.marginRight = '6px';
     containerStyle.marginLeft = '0';
   } else if (meta.align === 'right') {
-    containerStyle.marginLeft = '4px';
+    containerStyle.marginLeft = '6px';
     containerStyle.marginRight = '0';
   }
 
@@ -83,6 +86,11 @@ function ImageRenderer({ src, alt, title }) {
           height: 'auto'
         }}
       />
+      {meta.caption && (
+        <span style={{ fontStyle: 'italic', marginTop: '6px', display: 'block' }}>
+          {meta.caption}
+        </span>
+      )}
     </span>
   );
 }
